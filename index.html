@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookself Web Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="title">
+            <h1>Bookshelf Web App <br> by izaditya</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="box">
+                <div class="upperInput">
+                <h2 class="subTitle">Tambahkan Buku Baru</h2>
+                    <form id="bookInput" name="bookPlus">
+                    <div class="adding">
+                        <input type="text" name="judul" id="judul" required="required">
+                        <span for="judul">JUDUL</span>
+                    </div> 
+            <div class="lowerInput">
+                <div class="adding">
+                    <input type="text" name="penulis" id="penulis" required="required">
+                    <span for="penulis">PENULIS</span>
+                </div> 
+                <div class="adding">
+                    <input type="number" name="tahun" id="tahun" required="required">
+                    <span for="tahun">TAHUN</span>
+                </div> 
+            </div>
+                <div class="check">
+                    <input type="checkbox" name="isReaded" id="isReaded">
+                    <label for="isReaded">Tandai Sudah dibaca</label>
+                </div>
+                <button type="submit" class="submitButton">Simpan Buku</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section id="sectionSearch">
+        <div class="container">
+            <div class="box">
+            <h2 class="subTitle">Cari Buku</h2>
+            <form id="bookSearch">
+                <div class="adding">
+                <input type="text" name="searchTitle" id="searchTitle">
+                <span for="searchTitle">Cari Judul Buku</span>
+                </div>
+                <div class="titleSearchButton">
+                    <button type="submit" class="searchButton">Cari</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="box">
+            <h2 class="subTitle"> Belum selesai dibaca</h2>
+            <div id="unFinished">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="box">
+            <div class="">
+                <h2 class="subTitle"> Selesai dibaca</h2>
+                    <div id="finished">
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

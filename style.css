@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto&family=Silkscreen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+  background-color: rgb(241, 223, 227);
+  font-family: 'Silkscreen';
+  font-size: 18px;
+  
+}
+
+
+.title {
+    width: 100%; 
+    padding: 15px;
+    display: flex;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.container {
+    margin: 20px;
+    margin-inline: auto;
+    flex-direction: column;
+    display: flex;
+    width: min(100% - 32px, 750px);
+}
+
+.box {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(18, 25, 40, 0.15);
+}
+
+
+.subTitle
+{
+    margin-bottom: 14px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.adding {
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    position: relative;
+    width: 100%;
+}
+
+.adding input {
+    width: 100%;
+    padding: 9px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.adding span {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    font-size: 13px;
+    color: crimson;
+    transition: 0.5s;
+    cursor: text;
+}
+
+.adding input:valid ~ span,
+.adding input:focus ~ span,
+.adding input:hover ~ span 
+{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 10px;
+    padding: 0 10px;
+    background-color: crimson;
+    border-radius: 3px;
+    letter-spacing: 0.2em;
+}
+.adding input:valid,
+.adding input:focus
+{
+    border: 2px solid red;
+}
+
+#bookSearch .adding input:valid,
+#bookSearch .adding input:focus{
+  border: 2px solid crimson;
+}
+.lowerInput {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.check label {
+    color: crimson;
+    font-size: 15px;
+}
+
+.check label,
+.check input {
+    cursor: pointer;
+}
+
+.submitButton,
+.searchButton {
+    background-color:crimson;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Oswald';
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding:7px;
+    cursor: pointer;
+}
+
+.submitButton:hover,
+.searchButton:hover {
+    background-color: rgb(174, 18, 49);
+}
+
+
+.item {
+    font-family:'Oswald';
+    font-size: 16px;
+    border: 1px solid var(--gray);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  
+  .itemWriter {
+    font-size: 15px;
+  }
+  
+  .itemAction {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .deleteButton,
+  .finishButton,
+  .returnButton,
+  .cariButton {
+    padding: 5px 10px;
+    font-family: 'Oswald';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  
+  
+  .deleteButton {
+    background-color: crimson;
+  }
+  
+  .deleteButton:hover {
+    background-color: hsl(0, 84%, 50%);
+  }
+  
+  .finishButton {
+    background-color: #17d55d;
+  }
+  
+  .finishButton:hover {
+    background-color: hsl(142, 71%, 40%);
+  }
+  
+  .returnButton {
+    background-color: #09aeae;
+  }
+  
+  .returnButton:hover {
+    background-color: #0d7474;
+  }
+  
+  .alert {
+    position: fixed;
+    padding: 10px 20px;
+    color: #fff;
+    z-index: 100;
+    background-color: #7a8793;
+    transition: 0.5s;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
